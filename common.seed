@@ -16,40 +16,55 @@ CONFIG_BUSYBOX_CONFIG_FEATURE_CHECK_UNICODE_IN_ENV=y
 CONFIG_DROPBEAR_ECC_FULL=y
 CONFIG_DROPBEAR_ECC=y
 
+# packages
+# CONFIG_PACKAGE_luci-app-adblock-plus=y  # adblock
+# CONFIG_PACKAGE_luci-app-adguardhome=y   # adblock
+# CONFIG_PACKAGE_luci-app-aliyundrive-webdav=y    # 阿里云盘
+# CONFIG_PACKAGE_luci-app-argon-config=y          # argon 主题配置
+# CONFIG_PACKAGE_luci-app-aria2=y                 # aria2 
+# CONFIG_PACKAGE_luci-app-arpbind=y               # 用于绑定IP地址和MAC地址的ARP绑定工具。
+CONFIG_PACKAGE_luci-app-autoreboot=y            # reboot
+# CONFIG_PACKAGE_luci-app-cifs-mount=y            # 用于挂载CIFS共享的工具。
+CONFIG_PACKAGE_luci-app-ddns=y                  # ddns
+CONFIG_PACKAGE_luci-app-diskman=y               # 磁盘管理工具，用于管理磁盘分区和文件系统等。
+# CONFIG_PACKAGE_luci-app-filetransfer=y          # 用于在本地网络中传输文件的工具。
+# CONFIG_PACKAGE_luci-app-jd-dailybonus=y         # 京东签到
+# CONFIG_PACKAGE_luci-app-ksmbd=y                 # 用于在OpenWrt上运行SMB服务器的工具。
+# CONFIG_PACKAGE_luci-app-linkease=y              # 智能家居相关
+CONFIG_PACKAGE_luci-app-mosdns=y                # 基于DNS-over-HTTPS的DNS服务器。
+CONFIG_PACKAGE_luci-app-openvpn=y               # openvpn
+# CONFIG_PACKAGE_luci-app-serverchan=y            # 用于向微信推送路由器状态的工具。
+# CONFIG_PACKAGE_luci-app-services-wolplus=y      # Wake-on-LAN客户端，用于唤醒其他设备。
+CONFIG_PACKAGE_luci-app-smartdns=y              # 基于DNS-over-TLS和DNS-over-HTTPS的DNS服务器。
+CONFIG_PACKAGE_luci-app-sqm=y                   # 流量控制和QoS管理工具。
 
-CONFIG_PACKAGE_luci-app-argon-config=y
-
-CONFIG_PACKAGE_luci-app-arpbind=y
-CONFIG_PACKAGE_luci-app-autoreboot=y
-CONFIG_PACKAGE_luci-app-cifs-mount=y
-CONFIG_PACKAGE_luci-app-ddns=y
-CONFIG_PACKAGE_luci-app-diskman=y
-CONFIG_PACKAGE_luci-app-filetransfer=y
-CONFIG_PACKAGE_luci-app-ksmbd=y
-CONFIG_PACKAGE_luci-app-mosdns=y
-CONFIG_PACKAGE_luci-app-serverchan=y
-CONFIG_PACKAGE_luci-app-services-wolplus=y
-CONFIG_PACKAGE_luci-app-smartdns=y
-CONFIG_PACKAGE_luci-app-sqm=y
-
-
-CONFIG_PACKAGE_luci-app-ttyd=y
-CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_shortcut-fe=y
-CONFIG_PACKAGE_luci-app-turboacc=y
-CONFIG_PACKAGE_luci-app-upnp=y
-CONFIG_PACKAGE_luci-app-usb-printer=y
-CONFIG_PACKAGE_luci-app-v2raya=y
-CONFIG_PACKAGE_luci-app-vlmcsd=y
-CONFIG_PACKAGE_luci-app-vnstat=y
-CONFIG_PACKAGE_luci-app-vsftpd=y
-CONFIG_PACKAGE_luci-app-xlnetacc=y
-
-CONFIG_PACKAGE_luci-lib-json=y
-CONFIG_PACKAGE_luci-mod-rpc=y
-CONFIG_PACKAGE_luci-theme-argonv3=y
-
+# CONFIG_PACKAGE_luci-app-ssr-plus=y              # ssr
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core=y
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Hysteria=y
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
+# CONFIG_PACKAGE_luci-app-tencentddns=y           # 腾讯云ddns
+CONFIG_PACKAGE_luci-app-ttyd=y                  # ttyd
+# CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_shortcut-fe=y  
+# CONFIG_PACKAGE_luci-app-turboacc=y              # 基于Bbr和Turbo ACC算法的网络加速器。
+CONFIG_PACKAGE_luci-app-unblockmusic=y          # 网易云音乐解锁
+CONFIG_PACKAGE_luci-app-upnp=y                  # upnp
+CONFIG_PACKAGE_luci-app-usb-printer=y           # usb打印机
+# CONFIG_PACKAGE_luci-app-v2raya=y                # 基于V2Ray的代理客户端。
+# CONFIG_PACKAGE_luci-app-vlmcsd=y                # KMS激活服务器。
+CONFIG_PACKAGE_luci-app-vnstat=y                # 网络流量监控工具。
+CONFIG_PACKAGE_luci-app-vsftpd=y                # 轻量级FTP服务器。 
+CONFIG_PACKAGE_luci-app-xlnetacc=y              # 基于XL2TPD和Turbo ACC算法的网络加速器。
+# CONFIG_PACKAGE_luci-app-zerotier=y              # zerotier
+CONFIG_PACKAGE_luci-lib-json=y                  # json解析
+CONFIG_PACKAGE_luci-mod-rpc=y               
+CONFIG_PACKAGE_luci-theme-argonv3=y             
+# CONFIG_PACKAGE_luci-theme-bootstrap=y
+# CONFIG_PACKAGE_luci-theme-infinityfreedom=y
+# CONFIG_PACKAGE_luci-theme-material=y
+# CONFIG_PACKAGE_luci-theme-netgear=y
+# CONFIG_PACKAGE_luci-theme-rosy=y  
 CONFIG_PACKAGE_bash=y
-CONFIG_PACKAGE_coremark=y
+CONFIG_PACKAGE_coremark=y                       # 用于测试嵌入式系统性能的基准测试工具。
 CONFIG_PACKAGE_coreutils-dd=y
 CONFIG_PACKAGE_coreutils-nohup=y
 CONFIG_PACKAGE_coreutils-truncate=y
